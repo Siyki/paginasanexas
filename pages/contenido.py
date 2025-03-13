@@ -1,3 +1,3 @@
 import streamlit as st
 
-st.tittle ("pagina 2")
+st.title ("pagina 2")
