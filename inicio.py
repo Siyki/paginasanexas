@@ -16,7 +16,7 @@ st.subheader("Imagenes random antes del texto")
 col_img1, col_img2 = st.columns(2)
 
 with col_img1:
-    fotito = Image.open('001.png')
+    fotito = Image.open('actually.jpg')
     st.image(fotito, caption='Sisoy')
 
 with col_img2:
