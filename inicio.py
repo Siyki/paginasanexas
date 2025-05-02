@@ -9,14 +9,14 @@ st.markdown(
 )
 
 st.title("Mi primera chamba")
-st.header("la proxima semana no se como hice esto")
+st.header("Hola profe hago lo mejor que puedo en finales")
 st.write("soy diseñadora, no programadora, no sé que pretenden")
 
 st.subheader("Imagenes random antes del texto")
 col_img1, col_img2 = st.columns(2)
 
 with col_img1:
-    fotito = Image.open('actually.jpg')
+    fotito = Image.open('001.png')
     st.image(fotito, caption='Sisoy')
 
 with col_img2:
@@ -25,12 +25,12 @@ with col_img2:
 texto = st.text_input('Holi', 'holix2')
 st.write('El texto escrito es:', texto)
 
-st.subheader("Ahora usemos 3 columnas")
+st.subheader("Tres columnas profe)
 
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    st.subheader("Primera columna")
+    st.subheader("Diseño Interactivo")
     st.write("pros de diseño interactivo:")
     resp = st.checkbox("dibujitos")
     if resp:
@@ -38,17 +38,17 @@ with col1:
 
 with col2:
     st.subheader("Segunda columna")
-    modo = st.radio("Razones por las que odiar la carrera", ("nochamba", "quesehaceahi", "jesus"))
-    if modo == "nochamba":
-        st.write("total, hay que salir de este hueco")
-    if modo == "quesehaceahi":
-        st.write("diseño grafico 2.0")
-    if modo == "jesus":
-        st.write("yo no le creo lo de rehabilitado")
+    modo = st.radio("Razones por las que amar la carrera", ("diseño gráfico", "dibujitossss", "profe isaac"))
+    if modo == "diseño gráfico":
+        st.write("Viva el diseño gráfico")
+    if modo == "dibujitossss":
+        st.write("viva la creatividad")
+    if modo == "profe isaac":
+        st.write("universos la mejor materia")
 
 with col3:
-    st.subheader("Tercera columna")
-    st.write("un espacio vacío... como mi agenda de clientes")
+    st.subheader("Ola")
+    st.write("un espacio vacío... como mis respuestas de computrabajo")
 
 st.subheader("Uso de Botones")
 if st.button("Presiona aqui"):
