@@ -25,7 +25,7 @@ with col_img2:
 texto = st.text_input('Holi', 'holix2')
 st.write('El texto escrito es:', texto)
 
-st.subheader("Tres columnas profe)
+st.subheader("Tres columnas profe")
 
 col1, col2, col3 = st.columns(3)
 
