@@ -1,26 +1,10 @@
 import streamlit as st
+from PIL import Image
+
 st.set_page_config(page_title="Mi primera chamba", page_icon="🎨", layout="wide")
 
 st.markdown(
-    """
-    <style>
-    body {
-        background-color: #fff8f0;
-        color: #3b2f2f;
-        font-family: 'Comic Sans MS', cursive, sans-serif;
-    }
-    .stButton>button {
-        background-color: #ffb6b9;
-        color: white;
-        border-radius: 12px;
-        padding: 10px 20px;
-        border: none;
-    }
-    .stButton>button:hover {
-        background-color: #ff999c;
-    }
-    </style>
-    """,
+    '<style>body {background-color: #fef6e4; color: #001858; font-family: Helvetica, sans-serif;} .stButton>button {background-color: #f582ae; color: white; border-radius: 10px; padding: 8px 18px;} .stButton>button:hover {background-color: #f55c94;}</style>',
     unsafe_allow_html=True
 )
 
@@ -28,7 +12,7 @@ st.title("Mi primera chamba")
 st.header("la proxima semana no se como hice esto")
 st.write("soy diseñadora, no programadora, no sé que pretenden")
 
-st.subheader("Imagenes random antes del texto (cambio de orden)")
+st.subheader("Imagenes random antes del texto")
 col_img1, col_img2 = st.columns(2)
 
 with col_img1:
@@ -41,7 +25,7 @@ with col_img2:
 texto = st.text_input('Holi', 'holix2')
 st.write('El texto escrito es:', texto)
 
-st.subheader("Ahora usemos 3 columnas (antes eran 2)")
+st.subheader("Ahora usemos 3 columnas")
 
 col1, col2, col3 = st.columns(3)
 
